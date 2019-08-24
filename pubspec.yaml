@@ -70,3 +70,23 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/img/Foto2Cuadrada_liviana.png
+    - assets/img/carlos.jpg
+    - assets/img/andres.jpg
+    - assets/img/carlosL.jpg
+    - assets/img/gabriel.jpg
+    - assets/img/irma.jpg
+    - assets/img/juan.jpg
+    - assets/img/federico.jpg
+    - assets/img/alejandro.jpg
+    - assets/negocio/c.jpg
+    - assets/negocio/ch.jpg
+    - assets/negocio/kryon.jpg
+    - assets/negocio/ps.jpg
+    - assets/negocio/s.jpg
+    - assets/negocio/sf.jpg
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: fonts/Lato-Regular.ttf
