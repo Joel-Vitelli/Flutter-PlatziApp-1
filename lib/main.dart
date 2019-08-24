@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/description_place.dart';
 
-import 'gradient_back.dart';
-import 'review_list.dart';
+import 'developers_mza.dart';
 
 void main() => runApp(MyApp());
 
@@ -29,17 +27,17 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
 
-          body: Stack(
-            children: <Widget>[
-              ListView(
-                children: <Widget>[
-                  DescriptionPlace("Consensus", 4, descriptionText),
-                  ReviewList()
-                ],
-              ),
-              GradientBack("Unidades de negocios")
-            ],
-          ),
+            body: DevelopersMza("assets/mza/mza.jpg") //Stack(
+          // children: <Widget>[
+          //  ListView(
+          //   children: <Widget>[
+          //     DescriptionPlace("Consensus", 4, descriptionText),
+          //     ReviewList()
+          //   ],
+          //  ),
+          //  HeaderAppbar()
+          // ],
+          //),
         )
     );
   }

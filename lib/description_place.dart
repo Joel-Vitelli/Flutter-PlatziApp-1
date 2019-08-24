@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+import 'button.dart';
+
 class DescriptionPlace extends StatelessWidget {
 
   String namePlace;
@@ -17,9 +19,10 @@ class DescriptionPlace extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     final description = Container(
       margin: EdgeInsets.only(
-          top: 10,
+          top: 20,
           right: 20.0,
           left: 20.0
       ),
@@ -27,15 +30,15 @@ class DescriptionPlace extends StatelessWidget {
         descriptionPlace,
         style: const TextStyle(
           fontFamily: "Lato",
-          fontWeight: FontWeight.bold,
-          fontSize: 15,
+          fontWeight: FontWeight.normal,
+          fontSize: 12,
           color: Colors.black,
         ),
       ),
     );
 
     final star_half = Container(
-      margin: EdgeInsets.only(top: 250.0, right: 3.0),
+      margin: EdgeInsets.only(top: 327.0, right: 3.0),
       child: Icon(
         Icons.star_half,
         color: Colors.yellow,
@@ -43,7 +46,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final star_border = Container(
-      margin: EdgeInsets.only(top: 250.0, right: 3.0),
+      margin: EdgeInsets.only(top: 327.0, right: 3.0),
       child: Icon(
         Icons.star_border,
         color: Colors.yellow,
@@ -51,7 +54,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final star = Container(
-      margin: EdgeInsets.only(top: 250.0, right: 3.0),
+      margin: EdgeInsets.only(top: 327.0, right: 3.0),
       child: Icon(
         Icons.star,
         color: Colors.yellow,
@@ -61,7 +64,7 @@ class DescriptionPlace extends StatelessWidget {
     final title_stars = Row(
       children: <Widget>[
         Container(
-          margin: EdgeInsets.only(top: 250.0, left: 20.0, right: 20.0),
+          margin: EdgeInsets.only(top: 320.0, left: 20.0, right: 20.0),
           child: Text(
             namePlace,
             style: TextStyle(
@@ -80,9 +83,11 @@ class DescriptionPlace extends StatelessWidget {
 
 
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         title_stars,
         description,
+        Button("Navegar")
       ],
     );
   }
