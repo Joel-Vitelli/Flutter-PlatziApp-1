@@ -1,4 +1,4 @@
-# flutter_app
+# Consensus Flutter App
 
 A new Flutter application.
 
