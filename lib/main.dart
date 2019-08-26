@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'developers_mza.dart';
+//import 'package:flutter_app/description_place.dart';
+import 'package:flutter_app/developers_mza_list.dart';
+
+//import 'review_list.dart';
+//import 'header_appbar.dart';
+
+//import 'developers_mza.dart';
 
 void main() => runApp(MyApp());
 
@@ -27,17 +33,17 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
 
-            body: DevelopersMza("assets/mza/mza.jpg") //Stack(
-          // children: <Widget>[
+            body: DevelopersMzaList() //Stack(
+          //  children: <Widget>[
           //  ListView(
           //   children: <Widget>[
           //     DescriptionPlace("Consensus", 4, descriptionText),
           //     ReviewList()
-          //   ],
-          //  ),
+          //  ],
+          //   ),
           //  HeaderAppbar()
           // ],
-          //),
+          // ),
         )
     );
   }

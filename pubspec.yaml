@@ -87,6 +87,8 @@ flutter:
     - assets/negocio/s.jpg
     - assets/negocio/sf.jpg
     - assets/mza/mza.jpg
+    - assets/mza/0.jpg
+    - assets/mza/
   fonts:
     - family: Lato
       fonts:
