@@ -1,20 +1,10 @@
 import 'package:flutter/material.dart';
-
-//import 'package:flutter_app/description_place.dart';
-import 'package:flutter_app/developers_mza_list.dart';
-
-//import 'review_list.dart';
-//import 'header_appbar.dart';
-
-//import 'developers_mza.dart';
+import 'platzi_trips.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
-
-  String descriptionText = "Somos una empresa de Servicios Integrales de TI y Recursos Humanos, miembros activos de la CESSI Argentina (Cámara de Empresas de Software y Servicios Informáticos), de su Red Internacional de Negocios Tecnológicos y del Polo IT Buenos Aires. Disponemos de una casa central ubicada en Buenos Aires y una oficina en Mendoza.";
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,20 +21,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(
-
-            body: DevelopersMzaList() //Stack(
-          //  children: <Widget>[
-          //  ListView(
-          //   children: <Widget>[
-          //     DescriptionPlace("Consensus", 4, descriptionText),
-          //     ReviewList()
-          //  ],
-          //   ),
-          //  HeaderAppbar()
-          // ],
-          // ),
-        )
+        home: PlatziTrips()
     );
   }
 }
